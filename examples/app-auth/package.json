@@ -6,7 +6,9 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Box <oss@box.com>",
   "license": "Apache-2.0",
@@ -16,6 +18,8 @@
     "express": "^4.13.4",
     "express-formidable": "^0.1.2",
     "express-handlebars": "^3.0.0",
-    "express-session": "^1.13.0"
-  }
+    "express-session": "^1.13.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
